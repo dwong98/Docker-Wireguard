@@ -10,4 +10,8 @@ Step 1: [Install Docker](https://thematrix.dev/install-docker-and-docker-compose
 	 1. Next comes the Docker key
 	 `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
 	 3.  Add the Docker Repo (I have 64-bit OS)
+	`sudo add-apt-repository \
+	"deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable" ` 
 Step 2: Setup Wiregurard
