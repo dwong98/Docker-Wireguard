@@ -6,5 +6,5 @@ Step 1: Install Docker
 1. Open up DigitalOcean console. Make sure you are not logged on as the root user.
 2. A few thing are needed before installing docker
 	1. We need to install the neccessary tools
-			1. `sudo apt install apt-transport-https ca-certificates curl software-properties-common -y`
+		1. `sudo apt install apt-transport-https ca-certificates curl software-properties-common -y`
 	2. 
