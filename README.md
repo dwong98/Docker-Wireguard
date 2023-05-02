@@ -73,4 +73,6 @@ Once you are done editing the file, save and exit the file.
 	3. If all the configs are written right, you should see the QR code.
 	4. On the smartphone Wireguard cient, scanning the QR code is as simple as clicking the + -> Scan from QR Code.
 	5. After sertting it up properly, you can run it. It is best to use an ip locator site to check that the current ip location is different than after you run the Docker Wireguard.
-	6.  <img src ="Screenshot_wireguard.png" width = "200"/>
+	<img src ="Screenshot_wireguard.png" width = "200"/> <img src ="IP_Screenshot_HI.png" width = "200"/> <img src ="IP_Screenshot_NY" width = "200"/>
+
+
