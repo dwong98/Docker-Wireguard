@@ -57,7 +57,7 @@ services:
       - SYS_MODULE
     sysctls:
       - net.ipv4.conf.all.src_valid_mark=1
-
+      
 A few things to make sure:
 	1. TZ is timezone. Make sure to select your timezone properly. You can find your timezone in the TZ database name from this [Wikipedia page](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). For security purposes I did not show my changes above.
 	2. SERVERURL refers to the IP address of your server, which you can find on your DigitalOcean dashboard
@@ -72,8 +72,12 @@ Once you are done editing the file, save and exit the file.
 	`docker-compose logs -f wireguard`
 	3. If all the configs are written right, you should see the QR code.
 	4. On the smartphone Wireguard cient, scanning the QR code is as simple as clicking the + -> Scan from QR Code.
-	5. After sertting it up properly, you can run it. It is best to use an ip locator site to check that the current ip location is different than after you run the Docker Wireguard.
+	5. After sertting it up properly, you can run it. It is best to use an ip locator site like [this](https://www.iplocation.net/) to check that the current ip location is different than after you run the Docker Wireguard.
 
-	<img src ="Screenshot_wireguard.png" width = "200"/> <img src ="IP_Screenshot_HI.png" width = "200"/> <img src ="IP_Screenshot_NY.png" width = "200"/>
+<img src ="Screenshot_wireguard.png" width = "200"/> <img src ="IP_Screenshot_HI.png" width = "200"/> <img src ="IP_Screenshot_NY.png" width = "200"/>
+
+The first image shows docker enabled on my phone. As you can see, for my phone, when it is enabled, I can see a lock by the wifi bars (red underline). That icon can vary by phone. The next screenshot shows the IP and location before I had enabled the docker Wireguard. As you can see, the current location iss Hawaii. Once I got the Wireguard on, you can see the third screenshot. As you can see, the IP location has now changed and is showing the location of my DigitalOcean account. Also, under ISP, I can that it is DigitalOcean LLC.
+
+And there you go, congratulations! You have successfully installd Wireguard with Docker on your DigitalOcean server.
 
 
